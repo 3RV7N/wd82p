@@ -1,0 +1,95 @@
+.page {
+  width: 600px;
+  margin: 0 auto;
+}
+.synopsis {
+  color: grey;
+  font-style: italic;
+}
+
+.button {
+  color: white;
+  background-color: blue;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid grey;
+  border-radius: 5px;
+
+  width: 200px;
+  margin: 20px auto;
+  cursor: pointer;
+}
+
+.warning {
+  background-color: orange;
+}
+
+/* descendant selector */
+.synopsis em {
+  font-style: nromal;
+}
+
+/* Dont overdo it!*/
+.article h2 .subheading em {
+  color: red;
+}
+
+.kodego-website:link {
+  color: blue;
+  text-decoration: none;
+}
+
+.kodego-website:visited {
+  color: pink;
+}
+
+.kodego-website:hover {
+  color: aqua;
+  text-decoration: underline;
+}
+
+.kodego-website:active {
+  color: red;
+}
+
+.button:link,
+.button:visited {
+  display: block;
+  text-decoration: none;
+
+  color: white;
+  background-color: lightblue;
+  font-weight: center;
+  border: 2px solid rgb(155, 38, 38);
+  border-radius: 5px;
+
+  width: 200px;
+  margin: 20px auto;
+}
+
+.button:active,
+.button:visited:active {
+  color: white;
+  background-color: blue;
+}
+
+.warning:link,
+.warning:visited {
+  font-style: italic;
+  background-color: pink;
+}
+
+.warning:hover,
+.warning:visited:hover {
+  background-color: rgb(223, 22, 56);
+}
+
+.warning:active,
+.warning:visited:active {
+  background-color: rgb(175, 93, 106);
+}
+
+#button-1 {
+  background-color: grey;
+}
