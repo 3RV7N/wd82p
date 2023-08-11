@@ -1,0 +1,34 @@
+h1,
+p {
+  background-color: grey;
+}
+
+em,
+strong {
+  background-color: lightblue;
+}
+
+h1 {
+  padding: 50px 20px;
+  border: 5px solid black;
+}
+
+p {
+  padding: 20px 0 20px 10px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+div {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+
+  background-color: blue;
+  padding: 20px;
+  border: 2px solid grey;
+  border-radius: 10px;
+  margin: 0 auto;
+
+  width: 100px;
+}
