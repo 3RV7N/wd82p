@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+.header {
+  background-color: grey;
+  width: auto;
+  height: 200px;
+  position: relative;
+  top: 30px;
+}
+
+.header-container {
+  background-color: grey;
+  border-bottom: 5px dashed black;
+}
+
+.img-github-icon,
+.img-facebook-icon,
+.img-linkedin-icon,
+.img-twitter-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.header-name {
+  position: relative;
+  font-size: 30px;
+  top: 10px;
+  left: 30px;
+  color: aliceblue;
+}
+
+.icons-container {
+  display: flex;
+  justify-content: right;
+  list-style: none;
+  gap: 1em;
+  position: relative;
+  bottom: 10px;
+  right: 50px;
+}
+
+.main-container {
+  position: relative;
+  bottom: 40px;
+  left: 10px;
+}
+
+.main {
+  display: flex;
+  gap: 5em;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-info {
+  width: 700px;
+  gap: 2em;
+}
+
+.main-greetings {
+  font-size: 60px;
+  position: relative;
+  bottom: 10px;
+  left: 20px;
+  width: 550px;
+}
+
+.main-paragraph {
+  font-size: 35px;
+  width: 950px;
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+.contact-button {
+  background-color: grey;
+  color: white;
+  font-size: 30px;
+  position: relative;
+  top: 60px;
+  left: 20px;
+  border-top: 2px;
+  border-left: none;
+  border-right: none;
+  cursor: pointer;
+}
+
+.img-user {
+  width: 360px;
+  position: relative;
+  bottom: 20px;
+  left: 170px;
+}
+
+.language {
+  background-color: lightgray;
+  color: #696969;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 400px;
+  font-size: 40px;
+  padding: 70px;
+  gap: 2em;
+}
+
+.lang-name {
+  list-style-type: none;
+}
+
+.lang-exp {
+  font-size: 25px;
+  gap: 10em;
+}
