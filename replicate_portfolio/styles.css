@@ -119,3 +119,41 @@
   font-size: 25px;
   gap: 10em;
 }
+
+.project-header-container {
+  height: 80px;
+  background-color: #696969;
+}
+.header-bottom-container {
+  display: flex;
+  justify-content: space-between;
+  width: 1300px;
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+.project-title {
+  color: white;
+  font-size: 30px;
+}
+
+.contact-button-two {
+  background-color: #696969;
+  color: white;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.project-design-portfolio-container {
+  border: 2px black solid;
+}
+
+.project-design-flexbox-container {
+  display: flex;
+  border: 2px black solid;
+  justify-content: space-around;
+}
