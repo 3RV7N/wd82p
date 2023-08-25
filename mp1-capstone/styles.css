@@ -14,41 +14,24 @@ body {
 .nav-container {
   background-color: black;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  background-image: url(images/header.png);
 }
 
-h1 {
-  margin: 1em;
-}
-
-.menu {
-  display: flex;
-}
-
-.project-one,
-.project-two,
-.project-three,
-.project-four {
-  width: 50vh;
-}
-
-.md-menu-links {
-  list-style-type: none;
-  color: white;
-}
-
-.dropdown,
 .features-menu {
-  list-style-type: none;
-}
+  display: none;
+  flex-direction: column;
+  background: grey;
+  width: 30vh;
+  height: 38vh;
+  border-radius: 5px;
+  padding-top: 5px;
+  position: absolute;
 
-.menu {
-  display: flex;
-  list-style-type: none;
-  gap: 1.5em;
-  margin-top: 1.5em;
+  left: -14vh;
+  gap: 1em;
+  z-index: 1;
 }
-
 .hero-contact {
   color: white;
   font-size: 20px;
@@ -59,23 +42,60 @@ h1 {
   text-align: center;
 }
 
-.dropdown {
-  position: relative;
+.md-menu-links {
+  list-style-type: none;
+  color: white;
+}
+.img-box {
+  text-align: center;
+  width: 100%;
+  flex: 3;
 }
 
-.features-menu {
-  display: none;
+.content {
+  display: flex;
   flex-direction: column;
-  background: grey;
-  width: 30vh;
-  height: 27vh;
-  border-radius: 5px;
-  padding-top: 60px;
-  position: absolute;
-  top: 10px;
-  left: -14vh;
+  text-align: center;
+  gap: 0.5em;
+  flex: 1;
+  padding: 1em;
+}
+.hero-img {
+  width: 100%;
+
+  padding: 2em;
+}
+
+h1 {
+  margin: 1em;
+}
+
+.menu {
+  display: flex;
   gap: 1em;
-  z-index: 1;
+}
+
+.project-one,
+.project-two,
+.project-three,
+.project-four {
+  width: 100%;
+}
+
+.dropdown,
+.features-menu {
+  list-style-type: none;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+
+  margin-top: 1.5em;
+}
+
+.dropdown {
+  position: relative;
 }
 
 .dropdown:hover .features-menu {
@@ -93,8 +113,11 @@ h1 {
   display: none;
 }
 
-.hero-contact {
-  text-align: center;
+.project-details {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
 }
 
 .project-details > div {
@@ -116,18 +139,7 @@ h1 {
   gap: 1em;
   background-color: grey;
   height: auto;
-}
-
-.hero-img {
-  width: 45%;
-  margin-top: 1em;
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  gap: 0.5em;
+  background-image: url(images/hero\ container\ bg.png);
 }
 
 .skills-container {
@@ -145,6 +157,7 @@ a:hover {
 
 .projects-container {
   background-color: grey;
+  background-image: url(images/360_F_399555768_facLZEz0rD5YhJxTO9Z2UEaH1r4sMams.jpg);
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -152,55 +165,103 @@ a:hover {
   gap: 1em;
 }
 
-.speaker-form-header {
+.project-title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.article-box {
+  background-image: url(images/SpecialProjects_tech-abstract_1400x788.jpg);
+}
+
+.contact-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  color: brown;
+  flex-direction: column;
+  text-align: center;
+  padding: 1em;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+
+  text-align: left;
+  font-size: 15px;
+  gap: 1em;
+}
+
+.contact-info i {
+  display: flex;
+  align-items: left;
+  width: 100%;
+  margin: 0;
+  gap: 1em;
+}
+
+.contact-form-header {
   background-color: lightblue;
-  width: auto;
+  gap: 2em;
+  width: 100%;
+  padding: 3em;
+  background-image: url(images/1d8380cfc453af6571f66571bb088b98.jpg);
 }
 
-.speaker-form {
+.form-row-fn {
+  color: white;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  width: 100%;
+  background-color: brown;
   padding: 1em;
+  gap: 1em;
 }
 
-.contact-form {
+.name {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  padding: 1em;
+  width: 100%;
+}
+.form-email {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-message {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-number {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.name [type="f-name"] {
+  height: 5vh;
+}
+
+.form-email [type="email"] {
+  height: 5vh;
+}
+
+.form-number [type="number"] {
+  height: 5vh;
 }
 
 .title {
   font-size: 35px;
-  margin-top: 1em;
-}
-
-.contact-p {
-  margin-top: 1em;
-}
-
-.form-row-fn > input[type="text"] {
-  width: 60vh;
-  height: 5vh;
-}
-
-.form-row-email > input[type="email"] {
-  width: 60vh;
-  height: 5vh;
-}
-
-.custom-textarea {
-  width: 60vh;
-  height: auto;
-  min-height: 200px;
-  resize: vertical;
 }
 
 .form-row-button {
   display: flex;
   justify-content: end;
-  margin-right: 1.3em;
 }
 
 .footer {
@@ -212,20 +273,10 @@ a:hover {
 .footer-container {
   border: 1px solid black;
   background-color: blue;
+  background-image: url(images/header.png);
 }
 
-.projects-container header {
-  display: flex;
-  justify-content: space-between;
-}
-
-.projects-container > header p {
-  font-size: 20px;
-  border-bottom: 2px white solid;
-  cursor: pointer;
-}
-
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 500px) {
   .dropdown {
     display: none;
   }
@@ -245,7 +296,7 @@ a:hover {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 501px) and (max-width: 750px) {
   .hero-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -254,7 +305,7 @@ a:hover {
     background-color: grey;
   }
   .hero-img {
-    width: 40vh;
+    width: 100%;
   }
   .skills-container {
     display: grid;
@@ -268,55 +319,34 @@ a:hover {
     grid-column: 1 / 3;
   }
 
-  .form-row-fn > input[type="text"] {
-    width: 70vh;
-    height: 5vh;
+  .contact-form-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
-  .form-row-email > input[type="email"] {
-    width: 70vh;
-    height: 5vh;
-  }
-
-  .custom-textarea {
-    width: 70vh;
-    height: auto;
-    min-height: 200px;
-    resize: vertical;
-  }
   .form-row-button > button {
+    display: flex;
+    justify-content: end;
     font-size: 20px;
-    margin-right: 5em;
+  }
+
+  .nav-container {
+    justify-content: space-around;
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 751px) {
   .skills-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-  .form-row-fn > input[type="text"] {
-    width: 90vh;
-    height: 5vh;
-  }
-
-  .form-row-email > input[type="email"] {
-    width: 90vh;
-    height: 5vh;
-  }
-
-  .custom-textarea {
-    width: 90vh;
-    height: auto;
-    min-height: 200px;
-    resize: vertical;
   }
 
   .project-one,
   .project-two,
   .project-three,
   .project-four {
-    width: 35vh;
+    width: 100%;
+    cursor: pointer;
   }
 
   .projects-container {
@@ -326,9 +356,20 @@ a:hover {
   .projects-container header {
     grid-column: 1 / 5;
   }
+  .contact-form-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 
   .form-row-button > button {
     font-size: 25px;
-    margin-right: 9.5em;
+  }
+
+  .nav-container {
+    justify-content: space-around;
+  }
+
+  .contact-form-header {
+    width: 100%;
   }
 }

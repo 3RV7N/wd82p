@@ -11,39 +11,56 @@
     />
   </head>
   <body>
-    <header class="header-container">
-      <nav class="nav-container">
-        <h1>3RV7N</h1>
-        <ul class="menu">
-          <li class="dropdown">
-            <i class="fa-solid fa-bars features"></i>
-            <ul class="features-menu">
-              <li><a class="hero-contact" href="#">About </a></li>
-              <li><a class="hero-contact" href="#">Project </a></li>
-              <li><a class="hero-contact" href="#">Contact </a></li>
-            </ul>
-          </li>
-          <li><a class="md-menu-links" href="#">About</a></li>
-          <li><a class="md-menu-links" href="#">Project </a></li>
-          <li><a class="md-menu-links" href="#">Contact </a></li>
-        </ul>
-      </nav>
-      <section class="hero-container">
+    <nav class="nav-container">
+      <h1>3RV7N</h1>
+      <ul class="menu">
+        <li class="dropdown">
+          <i class="fa-solid fa-bars features"></i>
+          <ul class="features-menu">
+            <li><a class="hero-contact" href="#">About </a></li>
+            <li><a class="hero-contact" href="#project">Project </a></li>
+            <li><a class="hero-contact" href="#contact">Contact </a></li>
+            <li>
+              <a
+                class="hero-contact"
+                href="https://github.com/3RV7N/Resume/blob/main/Zapanta-Ervin-CV-AMACC-NAGA.pdf.pdf"
+                >Resume
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li><a class="md-menu-links" href="#">About</a></li>
+        <li><a class="md-menu-links" href="#project">Project </a></li>
+        <li><a class="md-menu-links" href="#contact">Contact </a></li>
+        <li>
+          <a
+            class="md-menu-links"
+            href="https://github.com/3RV7N/Resume/blob/main/Zapanta-Ervin-CV-AMACC-NAGA.pdf.pdf"
+            >Resume
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="hero-container">
+      <div class="img-box">
         <img class="hero-img" src="images/web applications.png" alt="" />
-        <div class="content">
-          <h2 class="hero-title">
-            Nice to meet you! I'm
-            <span>Ervin Zapanta</span>.
-          </h2>
-          <p class="hero-text">
-            Based in the Camarines Sur,Bicol I'm a KodeGo Student hoping to be a
-            Good Programmer.
-          </p>
-          <a class="hero-contact" href="#">CONTACT ME</a>
-        </div>
-      </section>
-    </header>
+      </div>
+
+      <div class="content">
+        <h2 class="hero-title">
+          Nice to meet you! I'm
+          <span>Ervin Zapanta</span>.
+        </h2>
+        <p class="hero-text">
+          Based in the Camarines Sur,Bicol I'm a KodeGo Student hoping to be a
+          Good Programmer.
+        </p>
+      </div>
+    </section>
+
     <hr />
+
     <section class="skills-container">
       <div>
         <h2>HTML</h2>
@@ -62,61 +79,68 @@
         <p>No Experience Since Birth</p>
       </div>
     </section>
+
     <hr />
+
     <section class="projects-container">
-      <header>
-        <h3>Pojects</h3>
-        <p class="hero-contact">CONTACT ME</p>
+      <header class="project-title">
+        <h3 id="project">Pojects</h3>
       </header>
+
       <article>
-        <div>
+        <div class="article-box">
           <img class="project-one" src="images/project1.jpg" alt="" />
         </div>
         <div class="project-details">
-          <h4>Design Portfolio</h4>
+          <h4>CSS Flexbox</h4>
           <div>
             <p class="tech">HTML</p>
             <p class="tech">CSS</p>
           </div>
-        </div>
 
-        <div class="active-links">
-          <a
-            class="view-project"
-            href="https://3rv7n.github.io/wd82p/09-css_flexbox/"
-            >View Project</a
-          >
-          <a
-            class="view-link"
-            href="https://github.com/3RV7N/wd82p/blob/main/09-css_flexbox/index.html"
-            >View Code</a
-          >
+          <div class="active-links">
+            <a
+              class="view-project"
+              href="https://3rv7n.github.io/wd82p/09-css_flexbox/"
+              >View Project</a
+            >
+            <a
+              class="view-link"
+              href="https://github.com/3RV7N/wd82p/blob/main/09-css_flexbox/index.html"
+              >View Code</a
+            >
+          </div>
         </div>
       </article>
 
       <article>
-        <div>
+        <div class="article-box">
           <img class="project-two" src="images/project2.jpg" alt="" />
         </div>
         <div class="project-details">
-          <h4>Design Portfolio</h4>
+          <h4>Advanced Positioning</h4>
           <div>
             <p class="tech">HTML</p>
             <p class="tech">CSS</p>
           </div>
-        </div>
-        <div class="active-links">
-          <a
-            class="view-project"
-            href="https://3rv7n.github.io/wd82p/10-advanced_postioning/"
-            >View Project</a
-          >
-          <a class="view-link" href="">View Code</a>
+
+          <div class="active-links">
+            <a
+              class="view-project"
+              href="https://3rv7n.github.io/wd82p/10-advanced_postioning/"
+              >View Project</a
+            >
+            <a
+              class="view-link"
+              href="https://github.com/3RV7N/wd82p/blob/main/10-advanced_postioning/index.html"
+              >View Code</a
+            >
+          </div>
         </div>
       </article>
 
       <article>
-        <div>
+        <div class="article-box">
           <img
             class="project-three"
             src="images/clipboard_image_69510a3fd90f89f1.jpg"
@@ -124,94 +148,108 @@
           />
         </div>
         <div class="project-details">
-          <h4>Design Portfolio</h4>
+          <h4>Responsive Design</h4>
           <div>
             <p class="tech">HTML</p>
             <p class="tech">CSS</p>
           </div>
-        </div>
-        <div class="active-links">
-          <a
-            class="view-project"
-            href="https://3rv7n.github.io/wd82p/11-responsive_design/"
-            >View Project</a
-          >
-          <a
-            class="view-link"
-            href="https://github.com/3RV7N/wd82p/blob/main/11-responsive_design/index.html"
-            >View Code</a
-          >
+
+          <div class="active-links">
+            <a
+              class="view-project"
+              href="https://3rv7n.github.io/wd82p/11-responsive_design/"
+              >View Project</a
+            >
+            <a
+              class="view-link"
+              href="https://github.com/3RV7N/wd82p/blob/main/11-responsive_design/index.html"
+              >View Code</a
+            >
+          </div>
         </div>
       </article>
 
       <article>
-        <div>
-          <img
-            class="project-four"
-            src="images/clipboard_image_71802fc8ae8a18d5.jpg"
-            alt=""
-          />
+        <div class="article-box">
+          <img class="project-four" src="images/project4.jpg" alt="" />
         </div>
         <div class="project-details">
-          <h4>Design Portfolio</h4>
+          <h4>HTML Forms</h4>
           <div>
             <p class="tech">HTML</p>
             <p class="tech">CSS</p>
           </div>
-        </div>
-        <div class="active-links">
-          <a
-            class="view-project"
-            href="https://3rv7n.github.io/wd82p/05-html_forms/"
-            >View Project</a
-          >
-          <a
-            class="view-link"
-            href="https://github.com/3RV7N/wd82p/blob/main/05-html_forms/index.html"
-            >View Code</a
-          >
+
+          <div class="active-links">
+            <a
+              class="view-project"
+              href="https://3rv7n.github.io/wd82p/05-html_forms/"
+              >View Project</a
+            >
+            <a
+              class="view-link"
+              href="https://github.com/3RV7N/wd82p/blob/main/05-html_forms/index.html"
+              >View Code</a
+            >
+          </div>
         </div>
       </article>
     </section>
 
-    <header class="speaker-form-header">
-      <section class="contact-form">
-        <div>
-          <p class="title">Contact</p>
-          <p class="contact-p">
-            I would love to hear about your project and how I could help. Please
-            fill in the form, and I'll get back to you as soon as possible.
-          </p>
+    <header class="contact-form-header">
+      <section class="contact-box">
+        <div class="contact-info">
+          <p id="contact" class="title">Contact Me</p>
+          <i class="fa-solid fa-user"><p>Ervin Zapanta</p></i>
+          <i class="fa-brands fa-google"><p>Ervinzapanta1@gmail.com</p></i>
+          <i class="fa-brands fa-yahoo"><p>Zapantaervin@yahoo.com</p></i>
+          <i class="fa-solid fa-phone"><p>0905-248-0797</p></i>
+          <i class="fa-solid fa-location-dot"
+            ><p>Pili, Camarines Sur, Philippines</p></i
+          >
         </div>
       </section>
 
-      <form class="speaker-form">
+      <form class="contact-form">
         <section class="form-row-fn">
-          <label for="full-name"></label>
-          <input name="full-name" type="text" placeholder="Name" />
-        </section>
+          <div class="name">
+            <label for="name">Full Name</label>
+            <input id="name" name="name" type="f-name" placeholder="Name" />
+          </div>
 
-        <section class="form-row-email">
-          <label for="email"></label>
-          <input id="email" name="email" type="email" placeholder="Email" />
-        </section>
+          <div class="form-number">
+            <label for="number">Number</label>
+            <input
+              id="number"
+              name="number"
+              type="number"
+              placeholder="Number"
+            />
+          </div>
 
-        <section class="form-row-message">
-          <label for="abstract"></label>
-          <textarea
-            name="abstract"
-            id="abstract"
-            class="custom-textarea"
-            placeholder="Message"
-          ></textarea>
-        </section>
+          <div class="form-email">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="Email" />
+          </div>
 
-        <section class="form-row-button">
-          <button>Submit</button>
+          <div class="form-message">
+            <label for="abstract">Message</label>
+            <textarea
+              name="abstract"
+              id="abstract"
+              class="custom-textarea"
+              placeholder="Message"
+            ></textarea>
+          </div>
+          <section class="form-row-button">
+            <button>Submit</button>
+          </section>
         </section>
       </form>
     </header>
+
     <hr />
+
     <footer class="footer-container">
       <nav>
         <h1>3RV7N</h1>
