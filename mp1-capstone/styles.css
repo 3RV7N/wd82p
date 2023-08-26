@@ -332,7 +332,7 @@ a:hover {
   border-bottom: 5px solid green;
 }
 
-@media only screen and (min-width: 501px) and (max-width: 750px) {
+@media only screen and (min-width: 820px) and (max-width: 1000px) {
   .md-menu-links {
     display: block;
   }
@@ -386,7 +386,7 @@ a:hover {
     height: 100%;
   }
 }
-@media only screen and (min-width: 751px) {
+@media only screen and (min-width: 1001px) {
   .md-menu-links {
     display: block;
   }
