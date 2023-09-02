@@ -23,13 +23,18 @@
 //console.log(balance);
 
 let balance = 1000;
-let transaction1 = +500;
-let transaction2 = -200;
-let transaction3 = -1000;
+let transaction1, transaction2, transaction3;
 
-console.log(balance + transaction1);
-console.log(balance + transaction2);
-console.log(balance + transaction3);
+transaction1 = balance + 500;
+balance = transaction1;
+
+transaction2 = balance - 200;
+balance = transaction2;
+
+transaction3 = balance - 1000;
+balance = transaction3;
+
+console.log(balance);
 
 // Create three variables 'testScore1', 'testScore2', and
 //'testScore3' and assign them different test scores as numbers.
@@ -43,10 +48,11 @@ console.log(balance + transaction3);
 
 // Log the 'averageScore' to the console.
 
-let testscore1 = parseFloat(25.456);
-let testscore2 = parseFloat(20.345);
-let testscore3 = parseFloat(15.353);
-let averageScore = Math.round(testscore1 + testscore2 + testscore3);
+let testscore1 = parseFloat(92);
+let testscore2 = parseFloat(85.6);
+let testscore3 = parseFloat(72.5);
+
+let averageScore = Math.round((testscore1 + testscore2 + testscore3) / 3);
 
 console.log(averageScore);
 
@@ -70,7 +76,7 @@ let temperature = parseInt(prompt("Celsius"));
 if (temperature >= 30) {
   console.log("It's hot outside!");
 } else if (temperature >= 20 && temperature <= 30) {
-  console.log("The weat2her is pleasant.");
+  console.log("The weather is pleasant.");
 } else if (temperature <= 20) {
   console.log("It's a bit chilly.");
 } else {
