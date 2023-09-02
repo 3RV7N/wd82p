@@ -69,9 +69,9 @@ let temperature = parseInt(prompt("Celsius"));
 
 if (temperature >= 30) {
   console.log("It's hot outside!");
-} else if (temperature >= 20) {
-  console.log("The weather is pleasant.");
-} else if (temperature >= 19) {
+} else if (temperature >= 20 && temperature <= 30) {
+  console.log("The weat2her is pleasant.");
+} else if (temperature <= 20) {
   console.log("It's a bit chilly.");
 } else {
   console.log();
