@@ -35,3 +35,13 @@ function lastLetter(string) {
 }
 
 console.log(lastLetter("abcde"));
+
+let userInput = parent(prompt("Enter a number"));
+
+for (let i = 1; i <= userInput; i++) {
+  if (i % 3 === 0) {
+    console.log("fizz");
+  } else {
+    console.log(i);
+  }
+}
