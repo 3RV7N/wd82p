@@ -54,3 +54,16 @@ function changeText() {
     btn.textContent = "Clicked";
   }
 }
+
+const body = document.body;
+const div = document.createElement("div");
+const p = document.createElement("p");
+p.innerText = "Hey I'm Red";
+p.style.color = "red";
+div.append(p);
+
+const h3Element = document.getElementById("h3Paragraph");
+h3Element.textContent = "Hey I'm Blue";
+h3Element.style.color = "blue";
+
+body.append(div);
