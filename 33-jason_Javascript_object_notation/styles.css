@@ -1,0 +1,9 @@
+.shopping-list {
+  display: flex;
+  gap: 1em;
+}
+
+.shop-item {
+  background-color: antiquewhite;
+  padding: 1em;
+}
